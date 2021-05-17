@@ -18,8 +18,7 @@ id_image={}
 blacklist = defaultdict(lambda: [])
 
 with open('tokens.txt', 'r') as f:
-    f.read()
-    exec(f)
+    exec(f.read())
 
 auth = tweepy.OAuthHandler(twitter_api_key, twitter_api_secret_key)
 auth.set_access_token(twitter_access_token, twitter_access_token_secret)
